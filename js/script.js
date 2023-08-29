@@ -12,7 +12,7 @@ document.getElementById('tombol').addEventListener('click', function(){
  replaceName();
 })
 
-let nameInput= document.getElementById('nameInput')
+let nameInput= document.getElementById('name-input')
 
 document.getElementById('kirim').addEventListener('click', function() {
     const nama = nameInput.value
@@ -68,4 +68,4 @@ function showDivs(n) {
 
 setInterval ( () => {
     plusDivs(1);
-}, 1000);
+}, 1800);

@@ -42,12 +42,20 @@
   height: 40px;
 }
 
+a{
+  color: black;
+}
+
 
   .main{
     width: 1366px;
     height: 578px;
     margin: 0px;
     border-bottom: 1px solid black;
+  }
+
+  #profile{
+    border-top: 2px solid black;
   }
 
   .facility{
@@ -59,16 +67,19 @@
     padding: 50px;
   }
 
-  .form{
-    border-top: 1px solid black;
+  #form{
+    border-top: 2px solid black;
     padding: 5px;
   }
 
+  
+
 
   .footer{
-    border-top: 1px solid black;
+    border-top: 2px solid black;
     display: flex;
     justify-content: flex-end;
+    padding: 10px;
   }
 
   @media only screen and (max-width:600px) {
