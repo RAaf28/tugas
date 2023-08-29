@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas revou</title>
+    <link href="./css/index.css" rel="stylesheet">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <!-- ini header -->
+    <header class="header-wrapper">
+        <img class="logo" alt="logo revou" src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png">
+        <div class="menu">
+            <button>Home</button>
+            <button>Our Profile</button>
+            <button>Portfolio</button>
+            <button>Message Us</button>
+        </div>
+
+    </header>
+    
+
+    <!-- ini main -->
+    <div class="main-content">
+        <h4>Hi <span id="name">visitor</span>, welcome to website</h4>
+        <p>ini adalah website latihan pertama</p>
+        <button id="tombol">ganti nama</button>
+        <!-- <img src="https://miro.medium.com/v2/resize:fit:1318/1*YH5mbPOj9yK73X-vGEER8w.png" alt="banner" width=1366p/> -->
+
+        <div>
+            <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Biaya_bootcamp_RevoU_6.original.png" class="img-slideshow"/>
+            <img src="https://journal.revou.co/content/images/2023/05/05052023---Banner---Kenalan-dengan-RevoU-Full-Stack-Software-Engineering.png" class="img-slideshow"/>
+            <img src="https://journal.revou.co/content/images/2023/02/01312023---Banner---9-Hal-Utama-SWE-yang-dipelajari-di-RevoU.png" class="img-slideshow"/>
+            <img src="https://pbs.twimg.com/media/Fsq-i-qaIAA4e9Q.jpg" class="img-slideshow"/>
+            <button onclick="plusDivs(-1)">previous</button>
+            <button onclick="plusDivs(1)">next</button>
+        </div>
+
+    </div>
+
+    <!-- ini profile -->
+    <div class="profile">
+       <h4><span class="facility"></span>our Facilities</span></h4>
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/21a0ad35-a57a-42ae-be83-888bff14a53f/dfuc0s1-e051f0cf-352b-4bf3-adca-5bed1e315cfa.png/v1/fill/w_662,h_515,q_80,strp/funny_looking_cat_by_choccyrat_dfuc0s1-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTE1IiwicGF0aCI6IlwvZlwvMjFhMGFkMzUtYTU3YS00MmFlLWJlODMtODg4YmZmMTRhNTNmXC9kZnVjMHMxLWUwNTFmMGNmLTM1MmItNGJmMy1hZGNhLTViZWQxZTMxNWNmYS5wbmciLCJ3aWR0aCI6Ijw9NjYyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Q-ZcfHAm9odwmEY4t2eGs1pyFmGUs2Z8yq7qB-zpnoU" alt="img" width="150px" height= "150px"class="prf-pic">
+        <img src="https://i.chzbgr.com/full/9675421440/h59942597/cat" alt="img" width="150px" height= "150px"class="prf-pic">
+        <img src="https://i.pinimg.com/736x/4f/01/67/4f0167d0418ad8032247abe3d46a25bf.jpg" alt="img" width="150px" height= "150px"class="prf-pic">
+    </div>
+    
+    <!-- ini form -->
+    <div class="form">
+        <form name="message-form" onsubmit="return validateForm()">
+        Nama: <input required type="text" placeholder="nama anda" id="name-input">
+        <br/>
+
+        Tanggal Lahir:
+        <input type="date" name="birth-date"/>
+        <br/>
+
+        Jenis Kelamin:
+        <input type="radio" id="male" name="gender" value="male"/>
+        <label for="male">Laki-laki</label>
+        <input type="radio" id="female" name="gender" value="female"/>
+        <label for="female">Perempuan</label>
+        <br/>
+
+        Pesan:
+        <textarea placeholder="pesan" name="messages"></textarea>
+        <br/>
+
+        <input type="submit" value="submit"/>
+        </form>
+        <div>
+            <p>Nama: <span id="sender-full-name"></span></p>
+            <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+            <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+            <p>Pesan: <span id="sender-messages"></span></p>
+        </div>
+    </div>
+
+    <!-- ini footer -->
+    <div class="footer">
+        <footer>
+            made by raa.f
+        </footer>
+    </div>
+<script src="./js/script.js"></script>
+</body>
+</html>

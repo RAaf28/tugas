@@ -1,0 +1,87 @@
+*{
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 16px 24px;
+}
+
+.header-wrapper>.menu{
+  display: flex;
+}
+
+.header-wrapper>.menu>button{
+  background-color: white;
+  padding: 8px 16px;
+  border: 1px solid gray;
+  cursor: pointer;
+  transition: 0.3s background-color ease-out ;
+}
+
+.header-wrapper>.menu>button:hover{
+  background-color: gainsboro;
+}
+
+.header-wrapper>.menu>button:first-child{
+  border-radius: 4px 0 0 4px;
+}
+
+.header-wrapper>.menu>button:last-child{
+  border-radius: 0 4px 4px 0;
+}
+
+.header-wrapper>.logo{
+  width: auto;
+  height: 40px;
+}
+
+
+  .main{
+    width: 1366px;
+    height: 578px;
+    margin: 0px;
+    border-bottom: 1px solid black;
+  }
+
+  .facility{
+    padding-left: 50px;
+  }
+
+ .prf-pic{
+    border-radius: 50%;
+    padding: 50px;
+  }
+
+  .form{
+    border-top: 1px solid black;
+    padding: 5px;
+  }
+
+
+  .footer{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media only screen and (max-width:600px) {
+    .header-wrapper{
+      flex-direction: column;
+    }
+
+    .menu{
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .logo{
+      margin-bottom: 14px;
+    }
+  }
