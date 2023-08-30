@@ -22,31 +22,66 @@
 
     <!-- ini main -->
     <div class="main-content">
-        <h4>Hi <span id="name">visitor</span>, welcome to website</h4>
+        <h1>Hi <span id="nama">visitor</span>, welcome to website</h1>
         <p>ini adalah website latihan pertama</p>
-        <button id="tombol">ganti nama</button>
+        <button id="tombol">change name</button>
 
         <div>
             <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Biaya_bootcamp_RevoU_6.original.png" class="img-slideshow" height="578px" width="100%"/>
             <img src="https://journal.revou.co/content/images/2023/05/05052023---Banner---Kenalan-dengan-RevoU-Full-Stack-Software-Engineering.png" class="img-slideshow" height="578px" width="100%"/>
             <img src="https://journal.revou.co/content/images/2023/02/01312023---Banner---9-Hal-Utama-SWE-yang-dipelajari-di-RevoU.png" class="img-slideshow" height="578px" width="100%"/>
             <img src="https://pbs.twimg.com/media/Fsq-i-qaIAA4e9Q.jpg" class="img-slideshow" height="578px" width="100%"/>
-            <button onclick="plusDivs(-1)">previous</button>
-            <button onclick="plusDivs(1)">next</button>
+            <button onclick="plusDivs(-1)" hidden>previous</button>
+            <button onclick="plusDivs(1)" hidden>next</button>
         </div>
 
     </div>
 
     <!-- ini profile -->
     <div id="profile">
-       <h4><span class="facility"></span>our Facilities</span></h4>
+       <h2><span class="facility"></span>our Facilititation</span></h2>
+       <div class="profile-wrapper">
         <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/21a0ad35-a57a-42ae-be83-888bff14a53f/dfuc0s1-e051f0cf-352b-4bf3-adca-5bed1e315cfa.png/v1/fill/w_662,h_515,q_80,strp/funny_looking_cat_by_choccyrat_dfuc0s1-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTE1IiwicGF0aCI6IlwvZlwvMjFhMGFkMzUtYTU3YS00MmFlLWJlODMtODg4YmZmMTRhNTNmXC9kZnVjMHMxLWUwNTFmMGNmLTM1MmItNGJmMy1hZGNhLTViZWQxZTMxNWNmYS5wbmciLCJ3aWR0aCI6Ijw9NjYyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Q-ZcfHAm9odwmEY4t2eGs1pyFmGUs2Z8yq7qB-zpnoU" alt="img" width="150px" height= "150px"class="prf-pic">
         <img src="https://i.chzbgr.com/full/9675421440/h59942597/cat" alt="img" width="150px" height= "150px"class="prf-pic">
         <img src="https://i.pinimg.com/736x/4f/01/67/4f0167d0418ad8032247abe3d46a25bf.jpg" alt="img" width="150px" height= "150px"class="prf-pic">
+        </div>
     </div>
     
     <!-- ini form -->
-    <div id="form">
+    <div class="container">
+        <div class="form-container">
+          <form id="user-form">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name">
+              <div class="error-message" id="name-error"></div>
+            </div>
+            <div>
+              <label for="birthdate">Birth Date:</label>
+              <input type="date" id="birthdate" name="birthdate">
+              <div class="error-message" id="birthdate-error"></div>
+            </div>
+            <div>
+              <label>Gender:</label>
+              <div>
+                <label><input type="radio" name="gender" value="Laki - laki"> Laki - laki</label>
+              </div>
+              <div>
+                <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+              </div>
+              <div class="error-message" id="gender-error"></div>
+            </div>
+            <div>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message"></textarea>
+              <div class="error-message" id="message-error"></div>
+            </div>
+            <button type="button" class="submit-button" onclick="validateAndDisplay()">Submit</button>
+          </form>
+        </div>
+        <div class="summary-container" id="summary-box"></div>
+      </div>
+    <!-- <div id="form">
         <form name="message-form" onsubmit="return validateForm()">
         Nama: <input required type="text" placeholder="nama anda" id="name-input">
         <br/>
@@ -66,16 +101,17 @@
         <textarea placeholder="pesan" name="messages"></textarea>
         <br/>
 
-        <input type="submit" value="submit" id="kirim"/>
+        <input type="submit" value="submit" id="kirim" onclick="displayAllInfo"/>
         </form>
-        <p hidden id="error-name">tidak boleh kosong</p>
-        <div>
+        <p hidden id="error-name">tidak boleh kosong</p> -->
+        <!-- <div id="user-data">
             <p>Nama: <span id="sender-full-name"></span></p>
             <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
             <p>Jenis Kelamin: <span id="sender-gender"></span></p>
             <p>Pesan: <span id="sender-messages"></span></p>
-        </div>
-    </div>
+        </div> -->
+        
+    <!-- </div> -->
 
     <!-- ini footer -->
     <div class="footer">
