@@ -1,16 +1,27 @@
-function replaceName(){
 
-// fungsi ganti nama
-let name = prompt('siapakah nama anda?', '')
+// greetings
+window.onload = function() {
+  const userName = prompt("Please insert your name:");
+  
+  if (userName === null || userName === "") {
+    alert("Name is required. Please refresh the page and enter your name.");
+  } else {
+    alert(`Hello, ${userName}! Welcome to our website.`);
+  }
+  
+document.getElementById('nama').innerHTML = userName 
+};
+// function replaceName(){
+// let name = prompt('siapakah nama anda?', '')
 
-console.log(name)
+// console.log(name)
 
-document.getElementById('nama').innerHTML = name 
-}
+// document.getElementById('nama').innerHTML = name 
+// }
 
-document.getElementById('tombol').addEventListener('click', function(){
- replaceName();
-})
+// document.getElementById('tombol').addEventListener('click', function(){
+//  replaceName();
+// })
 
 // fungsi pesan
 function validateAndDisplay() {
