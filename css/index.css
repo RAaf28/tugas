@@ -87,15 +87,27 @@ a{
     border-top: 2px solid black;
   }
 
+  .profile-wrapper {
+    display: flex;
+   
+  }
+
+  .prf-item{
+    text-align: center;
+    margin: 50px;
+  }
+
   .facility{
     padding-left: 50px;
   }
 
  .prf-pic{
     border-radius: 50%;
-    display: flexbox;
-    justify-content: center;
-    align-content: space-between;
+    overflow: hidden;
+  }
+
+  .prf-item p{
+    margin-top: 10px;
   }
 
   .prf-pic:hover {
