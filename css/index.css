@@ -3,15 +3,18 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
+  ;
 }
-
+ /* header */
 .header-wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid black;
   padding: 16px 24px;
+  background-image: none;
 }
+
 
 .header-wrapper>.menu{
   display: flex;
@@ -23,6 +26,7 @@
   border: 1px solid gray;
   cursor: pointer;
   transition: 0.3s background-color ease-out ;
+  background-image: none;
 }
 
 .header-wrapper>.menu>button:hover{
@@ -46,13 +50,24 @@ a{
   color: black;
 }
 
+  /* Visi Misi */
+ .vision {
+  padding-left: 20px;
+ }
 
-  .main{
-    width: 1366px;
-    height: 578px;
-    margin: 0px;
-    border-bottom: 1px solid black;
-  }
+ .mission {
+  padding-left: 20px;
+ }
+
+ .vision-content {
+  padding-left: 50px;
+ }
+
+ .mission-content {
+  padding-left: 50px;
+  margin-bottom: 10px;
+ }
+
 /* bagian pesan */
 .container {
   display: flex;
@@ -85,6 +100,7 @@ a{
   /* bagian profile */
   #profile{
     border-top: 2px solid black;
+    background-size: cover;
   }
 
   .profile-wrapper {
